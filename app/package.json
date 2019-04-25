@@ -2,11 +2,13 @@
   "name": "my-razzle-app",
   "version": "2.0.0-alpha.8",
   "license": "MIT",
+  "homepage": "https://thinnakrit.github.io/money-calculate-test/",
   "scripts": {
     "start": "razzle start",
     "build": "razzle build",
     "test": "razzle test --env=jsdom",
-    "start:prod": "NODE_ENV=production node build/server.js"
+    "start:prod": "NODE_ENV=production node build/server.js",
+    "deploy": "gh-pages -d build"
   },
   "dependencies": {
     "express": "^4.16.4",
@@ -15,5 +17,8 @@
     "react": "^16.8.6",
     "react-dom": "^16.8.6",
     "react-router-dom": "^5.0.0"
+  },
+  "devDependencies": {
+    "gh-pages": "^2.0.1"
   }
 }
