@@ -21,7 +21,6 @@ class Home extends React.Component {
     const { change } = this.state
     const resultChange = calculateChange(change)
     const showResult = printCalculateChange(resultChange)
-    console.log('resultChange', resultChange)
     return (
       <div>
         <div><input value={change} onChange={this.setChange} /></div>
