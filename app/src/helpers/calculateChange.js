@@ -51,6 +51,7 @@ export const moneyFormat = () => [
   },
 ]
 export const calculateChange = (change) => {
+  if(change < 0.00) return moneyFormat()
   const result = map(moneyFormat(), (data) => {
     data.count = parseInt(change / data.currency)
     change = (change - (data.count > 0 ? data.count * data.currency : 0)).toFixed(2)
