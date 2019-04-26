@@ -25,6 +25,11 @@ export const moneyFormat = () => [
     count: 0,
   },
   {
+    name: '5 dollar bill',
+    currency: 5,
+    count: 0,
+  },
+  {
     name: '1 dollar bill',
     currency: 1,
     count: 0,

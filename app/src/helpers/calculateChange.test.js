@@ -11,7 +11,7 @@ describe('Test calculateChange', () => {
     const change = 1.00
     const resultChange = calculateChange(change)
     let expectResult = moneyFormat()
-    expectResult[4].count = 1
+    expectResult[5].count = 1
     expect(resultChange).toEqual(expectResult)
   })
 
@@ -20,9 +20,9 @@ describe('Test calculateChange', () => {
     const change = 0.99
     const resultChange = calculateChange(change)
     let expectResult = moneyFormat()
-    expectResult[5].count = 3
-    expectResult[6].count = 2
-    expectResult[8].count = 4
+    expectResult[6].count = 3
+    expectResult[7].count = 2
+    expectResult[9].count = 4
     expect(resultChange).toEqual(expectResult)
   })
 
@@ -33,11 +33,11 @@ describe('Test calculateChange', () => {
     let expectResult = moneyFormat()
     expectResult[0].count = 1
     expectResult[2].count = 1
-    expectResult[4].count = 4
-    expectResult[5].count = 2
-    expectResult[6].count = 1
+    expectResult[5].count = 4
+    expectResult[6].count = 2
     expectResult[7].count = 1
-    expectResult[8].count = 2
+    expectResult[8].count = 1
+    expectResult[9].count = 2
     expect(resultChange).toEqual(expectResult)
   })
 })
